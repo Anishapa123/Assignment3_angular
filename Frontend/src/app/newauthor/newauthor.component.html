@@ -1,0 +1,53 @@
+<div class='card'>
+    <form (ngSubmit)="AddAuthor()">
+<div class='card-header'>
+ ADD AUTHOR
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody>  
+          <tr>
+              <td> <label>Author Id</label></td>
+              <td><input type="text" name="a_id" [(ngModel)]="authorlist.authorId"/></td>                  
+            </tr>   
+            <tr>
+                <td><label>Author Name</label></td>
+                <td><input type="text" name="a_name" [(ngModel)]="authorlist.authorName"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Author Code</label></td>
+                <td><input type="text" name="a_code" [(ngModel)]="authorlist.authorCode"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Author Date</label></td>
+                <td><input type="text" name="a_date" [(ngModel)]="authorlist.releaseDate"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Author Description</label></td>
+                <td><input type="text" name="a_desc" [(ngModel)]="authorlist.description"/></td>                  
+              </tr>  
+              <!-- <tr>
+                <td> <label>PPrice</label></td>
+                <td><input type="text" name="p_price" [(ngModel)]="productItem.price"/></td>                  
+              </tr>   -->
+              <tr>
+                <td> <label>Author starRating</label></td>
+                <td><input type="text" name="a_rating" [(ngModel)]="authorlist.starRating"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Author imageUrl</label></td>
+                <td><input type="text" name="a_image" [(ngModel)]="authorlist.imageUrl"/></td>                  
+              </tr>  
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" /></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+
